@@ -1,7 +1,7 @@
 export const steps = (start) => {
     // Catch Errors
     if(start <= 0 ){
-        throw 'Only positive numbers are allowed';
+        throw new Error;
     }
     // Repeat the function as long as a condition is true:
     // I need a loop!
