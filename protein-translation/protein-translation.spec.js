@@ -1,7 +1,7 @@
 import { translate } from './protein-translation';
 
 describe('ProteinTranslation', () => {
-  test('Empty RNA has no proteins', () => {
+  xtest('Empty RNA has no proteins', () => {
     expect(translate()).toEqual([]);
   });
 
@@ -17,7 +17,7 @@ describe('ProteinTranslation', () => {
     expect(translate('UUAUUG')).toEqual(['Leucine', 'Leucine']);
   });
 
-  xtest('Serine codons translate into protein', () => {
+  test('Serine codons translate into protein', () => {
     expect(translate('UCUUCCUCAUCG')).toEqual(['Serine', 'Serine', 'Serine', 'Serine']);
   });
 
